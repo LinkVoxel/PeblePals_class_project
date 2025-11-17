@@ -113,7 +113,7 @@ body {
   flex: 1;
 }
 .desktop-nav{
-  displsay: flex;
+  display: flex;
   gap: 32px;
 }
 .desktop-header{
@@ -124,4 +124,28 @@ body {
   align-items: center;
   padding: 32px;
   margin: 32px;
+}
+.h-testiimonal{
+  display: flex;
+  gap: 8px;
+  background-color: black;
+  border: 2px solid var(--text-white);
+  padding-right: 8px;
+  align-items: center;
+
+}
+.t-rating{
+  background-color: var(--yellow);
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  color: var(--red);
+  font-weight: 800;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  border: 0px 16px 16px 0px;
+}
+.t-text{
+
 }
