@@ -63,7 +63,7 @@ body {
 .main-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   background-color: #e2dfc8;
   padding: 0.5rem 2rem;
   border-radius: 15px;
@@ -76,7 +76,8 @@ body {
   /* height: 40px; */
   /* object-fit: contain; */
   position: absolute;
-  left: 16px;
+  left: 32px;
+  top: 32px;
 }
 
 

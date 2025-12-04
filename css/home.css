@@ -37,3 +37,23 @@
     padding: 8px;
   }
   
+
+
+.home-section{
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.yellow{
+  background-color: var(--yellow);
+  border-bottom-left-radius: 128px;
+  border-bottom-right-radius: 128px;
+}
+.blue{
+  background-color: var(--blue-light);
+  border-radius: 128px 128px 0px 0px;
+}
+.cream, .cream{
+  background-color: var(--cream);
+}
