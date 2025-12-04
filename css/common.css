@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  /* VARIABLES */
-  /*Colors*/
+:root {
+  /* Colors */
   --cream: #E2E0C7;
   --text-black: #030303;
   --text-white: #FFFFFF;
@@ -16,12 +10,12 @@ body {
   --blue-dark: #67A1BC;
   --red: #9F2123;
 
-  /*Shadows*/
+  /* Shadows */
   --card-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.25);
   --card-blue-shadow: 0px 32px 50px 0px rgba(6, 63, 86, 0.5);
   --text-shadow: 0px 4px 8px rgba(6, 63, 86, 0.5);
 
-  /*Font Sizes*/
+  /* Font Sizes */
   --f-base: 1rem;
   --f-u-1: 1.06rem;
   --f-u-2: 1.12rem;
@@ -33,77 +27,71 @@ body {
   --f-d-1: 0.94rem;
   --f-d-2: 0.88rem;
   --f-d-3: 0.81rem;
+}
 
-  /* font */
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  min-height: 100dvh;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: var(--blue-dark);
   color: var(--text-black);
-
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main-content {
   flex: 1;
 }
 
-body {
-  margin: 0;
-  background-color: #6fa1b7;
-  font-family: Arial, Helvetica, sans-serif;
-
-}
-
-
 .main-header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  background-color: #e2dfc8;
-  padding: 0.5rem 2rem;
+  background-color: var(--cream);
+  padding: 0.75rem 2rem;
   border-radius: 15px;
   margin: 32px;
-
 }
 
-
 .logo {
-  /* height: 40px; */
-  /* object-fit: contain; */
   position: absolute;
   left: 32px;
   top: 32px;
+  height: 64px;
 }
 
-
-
-.desktop-nav{
-    display: flex;
-    gap: 32px;
+.desktop-nav {
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
 
 .nav-link {
   text-decoration: none;
   font-weight: 800;
   color: var(--text-black);
-
-  transition: all 0.2s ease;
   font-size: var(--f-u-6);
-  transition: border 0.3s ease;
+  transition: border 0.3s ease, color 0.3s ease;
   border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent
-
-
+  border-bottom: 8px solid transparent;
 }
 
 .nav-link.active,
 .nav-link:hover {
   border-bottom: 8px solid var(--text-black);
+  color: var(--text-black);
 }
 
 .main-content,
@@ -111,42 +99,66 @@ body {
   text-align: center;
   margin-top: 2rem;
   color: white;
-  flex: 1;
 }
-.desktop-nav{
-  display: flex;
-  gap: 32px;
-}
-.desktop-header{
-  background-color: var(--cream);
-  border-radius: 32px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 32px;
-  margin: 32px;
-}
-.h-testiimonal{
-  display: flex;
-  gap: 8px;
-  background-color: black;
-  border: 2px solid var(--text-white);
-  padding-right: 8px;
-  align-items: center;
 
-}
-.t-rating{
-  background-color: var(--yellow);
-  align-self: stretch;
+.h-testimonial {
   display: flex;
+  gap: 12px;
+  background-color: var(--text-black);
+  border: 2px solid var(--text-white);
+  padding: 12px 16px;
+  align-items: center;
+  border-radius: 16px;
+  min-width: 240px;
   justify-content: center;
+}
+
+.t-rating {
+  background-color: var(--yellow);
   color: var(--red);
   font-weight: 800;
-  padding-left: 8px;
-  padding-right: 8px;
-
-  border: 0px 16px 16px 0px;
+  padding: 8px 12px;
+  border-radius: 10px;
 }
-.t-text{
 
+.t-text {
+  color: var(--text-white);
+  font-weight: 700;
+}
+
+.t-author {
+  color: var(--text-white);
+  font-size: var(--f-d-1);
+}
+
+.main-footer {
+  margin-top: 0;
+  padding: 2rem 1rem;
+  background-image: url('../assets/footer_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--text-white);
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cream-bg {
+  background-color: var(--cream);
+}
+
+.section-title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  color: var(--text-black);
+}
+
+.section-text {
+  font-size: var(--f-u-3);
+  line-height: 1.6;
 }
