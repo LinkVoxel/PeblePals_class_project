@@ -1,152 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-  margin: 0;
-  box-sizing: border-box;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  /* VARIABLES */
-  /*Colors*/
-  --cream: #E2E0C7;
-  --text-black: #030303;
-  --text-white: #FFFFFF;
-  --yellow: #FBD725;
-  --blue-light: #90B7BF;
-  --blue-dark: #67A1BC;
-  --red: #9F2123;
+    /* VARIABLES */
+    /*Colors*/
+    --cream: #E2E0C7;
+    --text-black: #030303;
+    --text-white: #FFFFFF;
+    --yellow: #FBD725;
+    --blue-light: #90B7BF;
+    --blue-dark: #67A1BC;
+    --red: #9F2123;
 
-  /*Shadows*/
-  --card-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.25);
-  --card-blue-shadow: 0px 32px 50px 0px rgba(6, 63, 86, 0.5);
-  --text-shadow: 0px 4px 8px rgba(6, 63, 86, 0.5);
+    /*Shadows*/
+    --card-shadow: 0px 16px 64px 0px rgba(0, 0, 0, 0.25);
+    --card-blue-shadow: 0px 32px 50px 0px rgba(6, 63, 86, 0.5);
+    --text-shadow: 0px 4px 8px rgba(6, 63, 86, 0.5);
 
-  /*Font Sizes*/
-  --f-base: 1rem;
-  --f-u-1: 1.06rem;
-  --f-u-2: 1.12rem;
-  --f-u-3: 1.19rem;
-  --f-u-4: 1.31rem;
-  --f-u-5: 1.38rem;
-  --f-u-6: 1.5rem;
+    /*Font Sizes*/
+    --f-base: 1rem;
+    --f-u-1: 1.06rem;
+    --f-u-2: 1.12rem;
+    --f-u-3: 1.19rem;
+    --f-u-4: 1.31rem;
+    --f-u-5: 1.38rem;
+    --f-u-6: 1.5rem;
 
-  --f-d-1: 0.94rem;
-  --f-d-2: 0.88rem;
-  --f-d-3: 0.81rem;
+    --f-d-1: 0.94rem;
+    --f-d-2: 0.88rem;
+    --f-d-3: 0.81rem;
 
-  /* font */
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    /* font */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 
-  min-height: 100dvh;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--blue-dark);
-  color: var(--text-black);
-
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blue-dark);
+    color: var(--text-black);
+}
+.main-content{
+    flex: 1;
 }
 
-.main-content {
-  flex: 1;
+.main-header{
+    background-color: var(--cream);
+    border-radius: 32px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 32px;
+    margin: 32px;
+    position: relative;
 }
 
-body {
-  margin: 0;
-  background-color: #6fa1b7;
-  font-family: Arial, Helvetica, sans-serif;
-
+.nav-link{
+    font-size: var(--f-u-6);
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--text-black);
+    transition: border 0.3s ease-in-out;
 }
-
-
-.main-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  background-color: #e2dfc8;
-  padding: 0.5rem 2rem;
-  border-radius: 15px;
-  margin: 32px;
-
+.nav-link.active,
+.nav-link:hover
+{
+    border-bottom: 8px solid var(--text-black);
 }
-
-
-.logo {
-  /* height: 40px; */
-  /* object-fit: contain; */
-  position: absolute;
-  left: 32px;
-  top: 32px;
-}
-
-
-
 .desktop-nav{
     display: flex;
     gap: 32px;
 }
 
-.nav-link {
-  text-decoration: none;
-  font-weight: 800;
-  color: var(--text-black);
-
-  transition: all 0.2s ease;
-  font-size: var(--f-u-6);
-  transition: border 0.3s ease;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent
-
-
+.logo{
+    position: absolute;
+    left: 32px;
+    top: 16px;
 }
 
-.nav-link.active,
-.nav-link:hover {
-  border-bottom: 8px solid var(--text-black);
-}
-
-.main-content,
-.main-footer {
-  text-align: center;
-  margin-top: 2rem;
-  color: white;
-  flex: 1;
-}
-.desktop-nav{
-  display: flex;
-  gap: 32px;
-}
-.desktop-header{
-  background-color: var(--cream);
-  border-radius: 32px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 32px;
-  margin: 32px;
-}
-.h-testiimonal{
-  display: flex;
-  gap: 8px;
-  background-color: black;
-  border: 2px solid var(--text-white);
-  padding-right: 8px;
-  align-items: center;
-
-}
-.t-rating{
-  background-color: var(--yellow);
-  align-self: stretch;
-  display: flex;
-  justify-content: center;
-  color: var(--red);
-  font-weight: 800;
-  padding-left: 8px;
-  padding-right: 8px;
-
-  border: 0px 16px 16px 0px;
-}
-.t-text{
-
-}
