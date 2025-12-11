@@ -46,11 +46,12 @@ body {
     background-color: var(--blue-dark);
     color: var(--text-black);
 }
-.main-content{
+
+.main-content {
     flex: 1;
 }
 
-.main-header{
+.main-header {
     background-color: var(--cream);
     border-radius: 32px;
     display: flex;
@@ -61,26 +62,26 @@ body {
     position: relative;
 }
 
-.nav-link{
+.nav-link {
     font-size: var(--f-u-6);
     font-weight: 800;
     text-decoration: none;
     color: var(--text-black);
     transition: border 0.3s ease-in-out;
 }
+
 .nav-link.active,
-.nav-link:hover
-{
+.nav-link:hover {
     border-bottom: 8px solid var(--text-black);
 }
-.desktop-nav{
+
+.desktop-nav {
     display: flex;
     gap: 32px;
 }
 
-.logo{
+.logo {
     position: absolute;
     left: 32px;
     top: 16px;
 }
-
